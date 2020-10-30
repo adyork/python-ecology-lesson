@@ -106,7 +106,8 @@ The  cartopy library is the package used to plot our data, it is designed for ge
 #### Sources: 
 CMIP5 Database: https://esgf-node.llnl.gov/projects/cmip5/  
 CMIP5 datastructure: https://portal.enes.org/data/enes-model-data/cmip5/datastructure  
-tools: https://nsidc.org/data/netcdf/tools.html  
+Tools: https://nsidc.org/data/netcdf/tools.html  
 Explanation file name: https://scienceofdoom.com/2020/05/16/extracting-rainfall-data-from-cmip5-models/  
+Terminology: http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#terminology  
 
 
