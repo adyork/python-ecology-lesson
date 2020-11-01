@@ -54,11 +54,10 @@ Downloading packages in your environment (default channel, other channels, what 
 Checking environments you have
 Checking packages you have
 
-
-
-
 ### Jupyter Notebook
 Activate the correct environment that you want your notebook to use
 Open the notebook in the specific location that you need
 
 ### Check installs
+
+## Where should your data be?
