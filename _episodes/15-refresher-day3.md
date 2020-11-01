@@ -12,15 +12,15 @@ keypoints:
 
 ### Spreadsheets
 
-Never modify your raw data. Always make a copy before making any changes.  
-Keep track of all of the steps you take to clean your data in a plain text file.  
-Organize your data according to tidy data principles: Avoid using multiple tables within one spreadsheet, avoid spreading data across multiple tabs, record zeros as zeros,
+* Never modify your raw data. Always make a copy before making any changes.  
+* Keep track of all of the steps you take to clean your data in a plain text file.  
+* Organize your data according to tidy data principles. The main takeaway here is that **data should be both human and machine readable**: Avoid using multiple tables within one spreadsheet, avoid spreading data across multiple tabs, record zeros as zeros,
 use an appropriate null value to record missing data, don’t use formatting to convey information or to make your spreadsheet look pretty, place comments in a separate column,
-record units in column headers, include only one piece of information in a cell, avoid spaces, numbers and special characters in column headers, avoid special characters in your data, record metadata in a separate plain text file.  
+record units in column headers, include only one piece of information in a cell, avoid spaces, numbers and special characters in column headers, avoid special characters in your data, record metadata in a separate plain text file. Store dates as strings preferibly in the ISO 8601 format. Export your table to a csv.  
 
   
 ### Python
-One can assign a value to a variable in Python. Those variables can be of several types, such as string, integer, floating point and complex numbers.  
+One can assign a value to a **variable** in Python. Those variables can be of several types, such as string, integer, floating point and complex numbers.  
   
 Python Data structures:  
  * **list**: `another_list = ["blue", "green", "red"]` - Lists contains an ordered sequence of elements. Each element can be accessed by an index. 
@@ -32,7 +32,7 @@ Python uses **0-based indexing**, in which the first element in a list, tuple or
 Libraries enable us to extend the functionality of Python.  
 
 ### Pandas
-One of the best options for working with tabular data in Python is the library Pandas (Python Data Analysis Library).  
+One of the best options for **working with tabular data** in Python is the library Pandas (Python Data Analysis Library).  
   
 Pandas provides an object called DataFrame, this object represents tabular data. Dataframes are a **2-dimensional data structure and can store data of different types** (including characters, integers, floating point values, factors and more) in columns.  
   
