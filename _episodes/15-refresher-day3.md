@@ -73,16 +73,20 @@ Explore your conda set-up (command line instructions):
 
 * Check the environments that you have installed (command line instructions) : `conda env list`
 * Activating an existing environment: 
-** Windows `activate environment_name`
-** LINUX, macOS: `source activate environment_name`
+  * Windows `activate environment_name`
+  * LINUX, macOS: `source activate environment_name`
 * List all packages and versions installed in active environment: `conda list`
 
+### Installing Packages
+Packages get installed in the environment that at that moment is active. Activate the required environment first before installing a package.  
+  
+Some packages that you use in python are already available in Anaconda, and can simply be imported in a script or notebook. Some packages can not be imported and need to be installed first.   
+  
+* Installing a package: `conda install PACKAGENAME`  
 
+The command above looks for the package on a certain location in the cloud, but sometimes packages are stored on a different location. The location where Conda searches for the package is called a **channel**. The pacage "plotnine" for example is not available on the default location and therefore needed the have the channel specified where Conda should look for the package: `conda install -c conda-forge plotnine`
 
-Creating an environmnent (what is an environment, why do you use it?)
-Downloading packages in your environment (default channel, other channels, what are channels)
-Checking environments you have
-Checking packages you have
+Channels are locations where Navigator and conda look for packages. You can search and browse packages and channels on Anaconda Cloud.
 
 ### Jupyter Notebook
 Activate the correct environment that you want your notebook to use
