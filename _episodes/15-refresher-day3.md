@@ -56,7 +56,29 @@ The plotnine package is built on top of Matplotlib and interacts well with Panda
 
 
 ## Setting up your Anaconda environment
-Downloading Anaconda - anaconda prompt/GUI
+Python is a popular language for research computing, and great for general-purpose programming as well. Installing all of its research packages individually can be a bit difficult, so we recommend **Anaconda, an all-in-one installer**. There are different version of the python language, but we use the latast one in this workshop Python version 3.x (e.g., 3.6 is fine).  
+The new MacOS "Catalina" proved to be difficult to install anaconda. These are links that users found useful in troubleshooting installing Anaconda with Mac Catalina: 
+
+
+### Anaconda Navigator vs Conda
+Once Anaconda is installed, interacting with the program can either happen using the user interface "Anaconda Navigator" or the command-line program "conda":
+* The command-line program conda is both a package manager and an environment manager. This helps data scientists ensure that each version of each package has all the dependencies it requires and works correctly. Windows users need the open "Anaconda Prompt" to be able to use the command-line easily, Mac and Linus user can open the command prompt directly.
+* Anaconda Navigator is a, point-and-click way to work with packages and environments without needing to type conda commands in a terminal window. You can use it to find the packages you want, install them in an environment, run the packages, and update them.
+
+
+### Anaconda Environment
+A conda environment is a directory that contains a specific collection of conda packages that you have installed. In order to run, many scientific packages depend on specific versions of other packages. Data scientists often use multiple versions of many packages and use multiple environments to separate these different versions. When an environment is not specified from the beginning and you isntall a package, it gets installend in the base environment.
+
+Explore your conda set-up (command line instructions): 
+
+* Check the environments that you have installed (command line instructions) : `conda env list`
+* Activating an existing environment: 
+** Windows `activate environment_name`
+** LINUX, macOS: `source activate environment_name`
+* List all packages and versions installed in active environment: `conda list`
+
+
+
 Creating an environmnent (what is an environment, why do you use it?)
 Downloading packages in your environment (default channel, other channels, what are channels)
 Checking environments you have
