@@ -48,7 +48,17 @@ The plotnine package is built on top of Matplotlib and interacts well with Panda
 
 
 ## Setting up your Anaconda environment
+Downloading Anaconda - anaconda prompt/GUI
+Creating an environmnent (what is an environment, why do you use it?)
+Downloading packages in your environment (default channel, other channels, what are channels)
+Checking environments you have
+Checking packages you have
 
-## Icebraker Challenge
 
 
+
+### Jupyter Notebook
+Activate the correct environment that you want your notebook to use
+Open the notebook in the specific location that you need
+
+### Check installs
