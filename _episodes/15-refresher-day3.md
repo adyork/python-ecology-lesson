@@ -88,9 +88,18 @@ The command above looks for the package on a default location where python packa
 
 
 ### Jupyter Notebook
-Activate the correct environment that you want your notebook to use
-Open the notebook in the specific location that you need
+To correctly open jupyter notebook:
+* Activate the environment that you want it to use first 
+* Type jupyter notebook in the command line to open up jupyter notebook
+* Browse to the location that you want the notebook to open in i.e. the working folder/folder where your data is stored in. Our data should be on your desktop in the folder data-carpentry/data. But open the notebook in the folder data-carpentry.
+
+
 
 ### Check installs
+Check if your installs are running by importing the libraries in a jupyter notebook.  
+List all packages and versions installed in active environment: `conda list`
 
 ## Where should your data be?
+Desktop
+  - Data-carpentry
+    - data
