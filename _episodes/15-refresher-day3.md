@@ -8,58 +8,47 @@ keypoints:
 
 ---
 
-
-## Takeaways on lessons uptil now
+## Takeaways
 
 ### Spreadsheets
 ### Python
 One can assign a value to a variable in Python. Those variables can be of several types, such as string, integer, floating point and complex numbers.  
   
 Python Data structures:  
- * list: another_list = ["blue", "green", "red"] - Lists contains an ordered sequence of elements. Each element can be accessed by an index. 
- * tuple: another_tuple = ("blue", "green", "red") - Tuples are order lists of elements, but immutable
- * Dictionary: another_dict = {'first': 'one', 'second': 'two', 'third': 'three'} - Dictionaries are data structures that provide mappings between keys and values
-  
+ * **list**: `another_list = ["blue", "green", "red"]` - Lists contains an ordered sequence of elements. Each element can be accessed by an index. 
+ * tuple: `another_tuple = ("blue", "green", "red")` - Tuples are order lists of elements, but immutable
+ * Dictionary: `another_dict = {'first': 'one', 'second': 'two', 'third': 'three'}` - Dictionaries are data structures that provide mappings between keys and values
+ 
+Python uses **0-based indexing**, in which the first element in a list, tuple or any other data structure has an index of 0. 
+ 
 Libraries enable us to extend the functionality of Python.  
 
 ### Pandas
-    
-A Dataframe is a Pandas data structure that allows one to access data by column (name or index) or row.
+One of the best options for working with tabular data in Python is the library Pandas (Python Data Analysis Library).  
+  
+Pandas provides an object called DataFrame, this object represents tabular data. Dataframes are a **2-dimensional data structure and can store data of different types** (including characters, integers, floating point values, factors and more) in columns.  
+  
+Aggregating data using the `groupby()` function enables you to generate useful summaries of data quickly.  
+  
+Dataframes can be subsetted in different ways including using labels (column headings), numeric ranges, or specific x,y index locations.  
+* dataframe["column_name"]
+* dataframe []
+* 
 
-Aggregating data using the groupby() function enables you to generate useful summaries of data quickly.
+Data from multiple files can be combined into a single DataFrame using merge and concat.
 
-
-
-    In Python, portions of data can be accessed using indices, slices, column headings, and condition-based subsetting.
-
-    Python uses 0-based indexing, in which the first element in a list, tuple or any other data structure has an index of 0.
-
-    Pandas enables common data exploration steps such as data indexing, slicing and conditional subsetting.
-
-
-    Matplotlib is the engine behind plotnine and Pandas plots.
-
-    The object-based nature of matplotlib plots enables their detailed customization after they have been created.
-
-    Export plots to a file using the savefig method.
-
-
-
-
-Working with tabular datafile in python, best package for that is pandas. 
-Important features in pandas: subsetting dataframes , grouping , combining dataframes
 ### Plotting
-Matplotlib and Plotnine
+Matplotlib is a Python package that is widely used throughout the scientific Python community to create high-quality and publication-ready graphics.  
+  
+Useful resources:  
+* Matplotlib gallery: https://matplotlib.org/gallery.html  
+* The PyViz.org website is an open platform for helping users decide on the best open-source (OSS) Python data visualization tools for their purposes, with links, overviews, comparisons, and examples.”  
 
-Useful resources: Matplotlib gallery: https://matplotlib.org/gallery.html
-
-
+The plotnine package is built on top of Matplotlib and interacts well with Pandas, it supports the creation of complex plots from data in a dataframe. Plotnine graphics are built step by step by adding new elements adding different elements on top of each other using the + operator. Putting the individual steps together in brackets () provides Python-compatible syntax.
 
 
 ## Setting up your Anaconda environment
 
 ## Icebraker Challenge
-
-challenge
 
 
