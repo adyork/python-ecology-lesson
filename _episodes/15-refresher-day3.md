@@ -11,6 +11,14 @@ keypoints:
 ## Takeaways
 
 ### Spreadsheets
+
+Never modify your raw data. Always make a copy before making any changes.  
+Keep track of all of the steps you take to clean your data in a plain text file.  
+Organize your data according to tidy data principles: Avoid using multiple tables within one spreadsheet, avoid spreading data across multiple tabs, record zeros as zeros,
+use an appropriate null value to record missing data, don’t use formatting to convey information or to make your spreadsheet look pretty, place comments in a separate column,
+record units in column headers, include only one piece of information in a cell, avoid spaces, numbers and special characters in column headers, avoid special characters in your data, record metadata in a separate plain text file.  
+
+  
 ### Python
 One can assign a value to a variable in Python. Those variables can be of several types, such as string, integer, floating point and complex numbers.  
   
