@@ -233,8 +233,8 @@ $ git push origin master
 > For programs that are more complex (or research critical) than `plot_precipitation_climatology.py`, 
 > it's a good idea to take the next step and check the overall behavior of entire pieces (or units) of code.
 > Related concepts like unit testing and continuous integration are beyond the scope of this lesson,
-> but Software Carpentry have a [lesson on testing](http://katyhuff.github.io/python-testing/)
-> that is well worth a read. 
+> but take a look at [Unit Testing](https://v4.software-carpentry.org/test/unit.html).
+> 
 >
 {: .callout}
 
