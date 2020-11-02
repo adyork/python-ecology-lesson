@@ -35,7 +35,7 @@ Adding tests to your code does take extra time but it makes your code and data m
 > 
 {: .callout}
 
-Now that we've written `plot_precipitation_climatology.py`,
+Now that we've written [`plot_precipitation_climatology.py`](https://github.com/adyork/python-oceanography-lesson/blob/gh-pages/code/plot_precipitation_climatology.py),
 how can we be sure that it's producing reliable results?
 
 The first step toward getting the right answers from our programs
