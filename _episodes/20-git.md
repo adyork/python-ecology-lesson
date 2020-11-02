@@ -45,11 +45,14 @@ so that you can retrieve and compare previous versions at any time.
 This is useful from an individual viewpoint,
 because you don't need to store multiple (but slightly different) copies of the same script.
 
-![File mess](../fig/05-git-file-mess.gif)
+[![Piled Higher and Deeper by Jorge Cham, http://www.phdcomics.com/comics/archive_print.php?comicid=1531]({{ page.root }}/fig/phd101212s.png)](http://www.phdcomics.com)
+
+"Piled Higher and Deeper" by Jorge Cham, http://www.phdcomics.com
 
 It's also useful from a collaboration viewpoint
 (including collaborating with yourself across different computers)
 because the system keeps a record of who made what changes and when.
+
 
 ## More background on version control, git, and github
 
