@@ -37,7 +37,7 @@ Adding tests to your code does take extra time but it makes your code and data m
 
 Now that we've written `plot_precipitation_climatology.py`, how can we be sure that it's producing reliable results?
 
-You can save a copy of [`plot_precipitation_climatology.py`](https://raw.githubusercontent.com/adyork/python-oceanography-lesson/gh-pages/code/plot_precipitation_climatology.py) by right clicking and choosing "Save As."
+You can save a copy of [`plot_precipitation_climatology.py`](https://raw.githubusercontent.com/adyork/python-oceanography-lesson/gh-pages/code/plot_precipitation_climatology.py) by right clicking and choosing "Save link as..."
 
 The first step toward getting the right answers from our programs
 is to assume that mistakes *will* happen
