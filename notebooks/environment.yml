@@ -1,0 +1,12 @@
+name: pyaos-lesson
+channels:
+  - conda-forge
+  - https://conda.anaconda.org/conda-forge/
+  - defaults
+dependencies:
+  - cmdline_provenance
+  - cartopy
+  - xarray
+  - netcdf4
+  - cmocean
+  - jupyter
