@@ -133,9 +133,67 @@ script_template.py: error: the following arguments are required: outfile
 {: .output}
 
 Using this template as a starting point,
-we can add the functions we developed previously to a script called
-`plot_precipitation_climatology.py`.
+we can add the functions we developed previously to a script called we called
+`plot_precipitation_climatology.py` in the last lesson.
 
+This is what should be in your `plot_precipitation_climatology.py` at this point.
+~~~
+$ cat plot_precipitation_climatology.py
+~~~
+{: .language-bash}
+
+~~~
+
+import xarray as xr
+import matplotlib.pyplot as plt
+import cartopy.crs as ccrs
+import numpy as np
+import cmocean
+
+
+def convert_pr_units(darray):
+    """Convert kg m-2 s-1 to mm day-1.
+    Args:
+      darray (xarray.DataArray): Precipitation data
+    """
+    darray.data = darray.data * 86400
+    darray.attrs['units'] = 'mm/day'
+    return darray
+def create_plot(clim, model_name, season, gridlines=False):
+    """Plot the precipitation climatology.
+    Args:
+      clim (xarray.DataArray): Precipitation climatology data
+      season (str): Season    
+    """
+    fig = plt.figure(figsize=[12,5])
+    ax = fig.add_subplot(111, projection=ccrs.PlateCarree(central_longitude=180))
+    clim.sel(season=season).plot.contourf(ax=ax,
+                                          levels=np.arange(0, 13.5, 1.5),
+                                          extend='max',
+                                          transform=ccrs.PlateCarree(),
+                                          cbar_kwargs={'label': clim.units},
+                                          cmap=cmocean.cm.haline_r)
+    ax.coastlines()
+    if gridlines:
+        plt.gca().gridlines()
+    title = '%s precipitation climatology (%s)' %(model_name, season)
+    plt.title(title)
+def plot_pr_climatology(pr_file, season, gridlines=False):
+    """Plot the precipitation climatology.
+    Args:
+      pr_file (str): Precipitation data file
+      season (str): Season (3 letter abbreviation, e.g. JJA)
+      gridlines (bool): Select whether to plot gridlines
+    """
+    dset = xr.open_dataset(pr_file)
+    clim = dset['pr'].groupby('time.season').mean('time', keep_attrs=True)
+    clim = convert_pr_units(clim)
+    create_plot(clim, dset.attrs['model_id'], season, gridlines=gridlines)
+    plt.show()
+~~~
+{: .language-python}
+
+We are going to modify this to use the same structure as our script template by adding a `main()` `if __name__` and `argparse`.
 ~~~
 $ cat plot_precipitation_climatology.py
 ~~~
