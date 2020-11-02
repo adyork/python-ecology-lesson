@@ -58,10 +58,11 @@ Every NetCDF dimension has **both a name and a size**.
 ### Variables
 A variable represents an **array of values of the same type**. Variables are used to store the bulk of the data in a netCDF file. 
 A variable has a **name, data type, and shape** described by its list of dimensions specified when the variable is created. The number of dimensions is the rank (also known as dimensionality). A scalar variable has a rank of 0, a vector has a rank of 1, and a matrix has a rank of 2. 
-A variable can also have associated attributes that can be added, deleted, or changed after the variable is created.
+A variable can also have associated attributes that can be added, deleted, or changed after the variable is created.  
+Examples of variables are: temperature, salinity, oxygen, etc.
 
 ### Coordinate variables
-A one-dimensional variable with the same name as a dimension is a coordinate variable. It is associated with a dimension of one or more data variables and typically defines a physical coordinate corresponding to that dimension.
+A one-dimensional variable with the same name as a dimension is a coordinate variable. It is associated with a dimension of one or more data variables and typically defines a physical coordinate corresponding to that dimension. 2D coordinate fiels will not be defined as dimensions.
 
 Coordinate variables have no special meaning to the netCDF library. However, the software using this library should handle coordinate variables in a specialized way.
 
