@@ -54,6 +54,7 @@ because the system keeps a record of who made what changes and when.
 ## More background on version control, git, and github
 
 * Git and GitHub tutorial by Joe Futrelle, WHOI IS App Dev, 19 June 2020
+   * Disclaimer: Github continues to update how the site looks and add new features. Some of the screenshots may look different now.
    * [link to slides](https://github.com/WHOIGit/whoi-git-workshop) 
    * [link to recording](https://drive.google.com/file/d/18q-S4JyTZbWl8wrQL29ao_mh4-YzeoEu/view?usp=sharing)
 * [Software Carpentry: Version Control with Git](https://github.com/swcarpentry/git-novice)
