@@ -63,6 +63,7 @@ We will delve into github a bit more in the next lesson.
 * GitHub is a free* website that makes it easier to use git
 * GitHub facilitates creating, browsing, and sharing git repositories
 * GitHub provides tools that complement git, such as software licensing, issue tracking, wikis, and various kinds of automation
+* GitHub includes visualizations that help you understand your version history such as side by side views of changed versions with differences color-coded.
 * GitHub is one of the largest collections of open-source software in the world
 * GitHub is one of several websites and/or tools that work with git; Others include Bitbucket and GitLab
 
