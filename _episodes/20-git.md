@@ -60,7 +60,7 @@ It's also useful from a collaboration viewpoint (including collaborating with yo
 
 We will delve into github a bit more in the next lesson.
 
-* GitHub is a free* website that makes it easier to use git
+* GitHub is a free* website that makes it easier to use git.  
 * GitHub facilitates creating, browsing, and sharing git repositories
 * GitHub provides tools that complement git, such as software licensing, issue tracking, wikis, and various kinds of automation
 * GitHub includes visualizations that help you understand your version history such as side by side views of changed versions with differences color-coded.
@@ -77,10 +77,10 @@ We will delve into github a bit more in the next lesson.
    * Yes and no. Commands are simple, concepts can be tricky at first.
 * Is GitHub just for open-source software? 
    * No, you can use it for copyrighted software and you can create private repositories
-* Is GitHub free? 
-   * Yes, with some limitations.
 * Can I use git without using GitHub?
    * Yes
+* Is github free?
+   * Yes, the core functionality of github is free though there are some limitations such as the number of collaborators in a private repository.  There is no longer a limit to the number of private repositories you create in a free account. 
 
 ### More resources
 
