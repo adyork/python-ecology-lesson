@@ -31,43 +31,73 @@ keypoints:
 >
 {: .challenge}
 
-A version control system stores a master copy of your code in a repository,
-which you can't edit directly. 
+## What is version control?
 
-Instead, you checkout a working copy of the code,
-edit that code,
-then commit changes back to the repository.
+A version control system stores a master copy of your code in a repository, which you can't edit directly. 
 
-In this way,
-the system records a complete revision history (i.e. of every commit),
-so that you can retrieve and compare previous versions at any time.
+Instead, you checkout a working copy of the code, edit that code, then commit changes back to the repository.
 
-This is useful from an individual viewpoint,
-because you don't need to store multiple (but slightly different) copies of the same script.
+In this way, the system records a complete revision history (i.e. of every commit), so that you can retrieve and compare previous versions at any time.
+
+This is useful from an individual viewpoint, because you don't need to store multiple (but slightly different) copies of the same script.
 
 [![Piled Higher and Deeper by Jorge Cham, http://www.phdcomics.com/comics/archive_print.php?comicid=1531]({{ page.root }}/fig/phd101212s.png)](http://www.phdcomics.com)
 
 "Piled Higher and Deeper" by Jorge Cham, http://www.phdcomics.com
 
-It's also useful from a collaboration viewpoint
-(including collaborating with yourself across different computers)
-because the system keeps a record of who made what changes and when.
+It's also useful from a collaboration viewpoint (including collaborating with yourself across different computers) because the system keeps a record of who made what changes and when.
 
+### What is Git?
 
-## More background on version control, git, and github
+* git is software that lets you work on a set of files without losing track of previous versions of those files
+* git enables multiple people to work on the same set of files simultaneously
+* git keeps track of changes in a repository so that they
+   * won’t be lost
+   * they can be shared
+* git is one of several tools for revision control, also known as version control
+
+### What is Github?
+
+We will delve into github a bit more in the next lesson.
+
+* GitHub is a free* website that makes it easier to use git
+* GitHub facilitates creating, browsing, and sharing git repositories
+* GitHub provides tools that complement git, such as software licensing, issue tracking, wikis, and various kinds of automation
+* GitHub is one of the largest collections of open-source software in the world
+* GitHub is one of several websites and/or tools that work with git; Others include Bitbucket and GitLab
+
+### Frequently Asked Questions
+
+* Is git just for code? 
+   * No, but you should generally only use it for small text files (small = <1MB) because it's designed and optimized for code.
+* Can I use git with my favorite programming tools?
+   * Yes
+* Is git hard to learn? 
+   * Yes and no. Commands are simple, concepts can be tricky at first.
+* Is GitHub just for open-source software? 
+   * No, you can use it for copyrighted software and you can create private repositories
+* Is GitHub free? 
+   * Yes, with some limitations.
+* Can I use git without using GitHub?
+   * Yes
+
+### More resources
 
 * Git and GitHub tutorial by Joe Futrelle, WHOI IS App Dev, 19 June 2020
-   * Disclaimer: Github continues to update how the site looks and add new features. Some of the screenshots may look different now.
+   * Disclaimer: Github continues to update how the site looks and add new features. Some of the screenshots may look different now.  Special thanks to Joe for allowing us to pull content from his workshop for this lesson.
    * [link to slides](https://github.com/WHOIGit/whoi-git-workshop) 
    * [link to recording](https://drive.google.com/file/d/18q-S4JyTZbWl8wrQL29ao_mh4-YzeoEu/view?usp=sharing)
 * [Software Carpentry: Version Control with Git](https://github.com/swcarpentry/git-novice)
 * [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
+## Setup to work with Git locally on your computer
 
-## Setup
+It is possible to use github.com alone to manage your version control, but we are going to show you how to use Git locally to work with files on your computer.  This will help demonstrate the foundational concepts of git and make what you see in github clearer.
 
 When we use Git on a new computer for the first time,
 we need to configure a few things. 
+
+We recommend following along with "Git Bash" application for Windows and Terminal (Linux/Mac).
 
 ~~~
 $ git config --global user.name "Your Name"
