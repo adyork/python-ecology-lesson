@@ -16,7 +16,8 @@ keypoints:
 - "Software Carpentry has more advanced lessons on code testing."
 ---
 
-> ## Scientist's nightmare
+> ## Why do tests?  
+> ### Scientist's nightmare
 >
 > If you needed any motivation to learn and employ the principles of defensive programming,
 > look no further than [this article](http://science.sciencemag.org/content/314/5807/1856).
@@ -24,6 +25,10 @@ keypoints:
 > three of which were in *Science* - because his code had inadvertently switched
 > the rows and columns of a data table.
 >
+> ### Resources:
+> * [The Turing Way: Code Testing](https://the-turing-way.netlify.app/reproducible-research/testing.html?highlight=unit%20test).  Great information about why and how to test.  This includes guidance for other languages too, not just python.
+> * [The Hitchhiker’s Guide to Python: Testing Your Code](https://docs.python-guide.org/writing/tests/) Targeted guidance for ways to test in python.
+> 
 {: .callout}
 
 Now that we've written `plot_precipitation_climatology.py`,
