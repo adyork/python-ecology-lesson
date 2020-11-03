@@ -33,7 +33,6 @@ Systems like Git allow us to move work between any two repositories. In
 practice, though, it's easiest to use one copy as a central hub, and to keep it
 on the web rather than on someone's laptop. Most programmers use hosting
 services like [GitHub](https://github.com), [BitBucket](https://bitbucket.org) or
-[GitLab](https://gitlab.com/) to hold those master copies.
 
 Let's start by sharing the changes we've made to our current project with the
 world. Log in to GitHub, then click on the icon in the top right corner to
@@ -133,8 +132,8 @@ Compressing objects: 100% (6/6), done.
 Writing objects: 100% (9/9), 821 bytes, done.
 Total 9 (delta 2), reused 0 (delta 0)
 To https://github.com/DamienIrving/data-carpentry
- * [new branch]      master -> main
-Branch main set up to track remote branch master from origin.
+ * [new branch]      main -> main
+Branch main set up to track remote branch main from origin.
 ~~~
 {: .output}
 
