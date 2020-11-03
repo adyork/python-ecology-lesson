@@ -239,3 +239,5 @@ print(new_record)
 > ~~~
 > {: .language-python}
 {: .solution}
+
+You can download a copy of the final code by right clicking this link and choosing "Save link as..." [plot_precipitation_climatology_final.py](https://github.com/adyork/python-oceanography-lesson/raw/gh-pages/code/plot_precipitation_climatology_final.py)
