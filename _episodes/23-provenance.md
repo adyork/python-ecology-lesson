@@ -23,6 +23,7 @@ and [CDO](https://code.mpimet.mpg.de/projects/cdo) command line tools,
 which insert a record of what was executed at the command line
 into the history attribute of the output netCDF file.
 
+Example:
 ~~~
 import xarray as xr
 
