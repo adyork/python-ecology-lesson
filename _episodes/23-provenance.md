@@ -241,3 +241,10 @@ print(new_record)
 {: .solution}
 
 You can download a copy of the final code by right clicking this link and choosing "Save link as..." [plot_precipitation_climatology_final.py](https://github.com/adyork/python-oceanography-lesson/raw/gh-pages/code/plot_precipitation_climatology_final.py)
+
+And test your code by running:
+
+~~~
+$ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512.nc JJA pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512-JJA-clim_land-mask.png --mask data/sftlf_fx_ACCESS1-3_historical_r0i0p0.nc land
+~~~
+{: .language-bash}
