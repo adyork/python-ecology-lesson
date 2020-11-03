@@ -26,7 +26,7 @@ from the CDO and NCO projects in addition to Python code,
 so the command line is the natural place to manage your workflows
 (e.g. using shell scripts or make files).
 
-> For this lesson we recommend using Anaconda Prompt(Win) Terminal(Mac/Linux).  But if you have a preferred way to work with python3 on a command line you can use it.
+> For this lesson we recommend using Anaconda Prompt(Win) Terminal(Mac/Linux).  But if you have a preferred way to work with python3 on a command line you can use it as long as you are working in an environment that has our required python packages for the workshop.
 >
 {: .callout}
 
