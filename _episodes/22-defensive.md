@@ -351,7 +351,7 @@ and then commit the changes to git and push to GitHub.
 ~~~
 $ git add plot_precipitation_climatology.py
 $ git commit -m "Added realm check"
-$ git push origin master
+$ git push origin main
 ~~~
 {: .language-bash}
 
