@@ -12,6 +12,10 @@ keypoints:
 - "Most Python scripts have a similar structure that can be used as a template."
 ---
 
+> For this lesson we recommend using Anaconda Prompt(Win) Terminal(Mac/Linux).  But if you have a preferred way to work with python3 on a command line you can youseit.
+>
+{: .callout}
+
 We've arrived at the point where we have successfully defined the functions
 required to plot the precipitation data.
 
