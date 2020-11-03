@@ -33,7 +33,7 @@ keypoints:
 
 ## What is version control?
 
-A version control system stores a master copy of your code in a repository, which you can't edit directly. 
+A version control system stores a main copy of your code in a repository, which you can't edit directly. 
 
 Instead, you checkout a working copy of the code, edit that code, then commit changes back to the repository.
 
