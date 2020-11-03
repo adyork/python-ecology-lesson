@@ -23,7 +23,6 @@ Adding tests to your code does take extra time but it makes your code and data m
 ## Resources:
  * [The Turing Way: Code Testing](https://the-turing-way.netlify.app/reproducible-research/testing.html?highlight=unit%20test).  Great information about why and how to test.  This includes guidance for other languages too, not just python.
  * [The Hitchhiker’s Guide to Python: Testing Your Code](https://docs.python-guide.org/writing/tests/) Targeted guidance for ways to test in python.  
- 
 > ### Scientist's nightmare
 >
 > If you needed any motivation to learn and employ the principles of defensive programming,
@@ -32,7 +31,6 @@ Adding tests to your code does take extra time but it makes your code and data m
 > three of which were in *Science* - because his code had inadvertently switched
 > the rows and columns of a data table.
 >
-> 
 {: .callout}
 
 Now that we've written `plot_precipitation_climatology.py`, how can we be sure that it's producing reliable results?
@@ -210,9 +208,10 @@ in the context of the `plot_precipitation_climatology.py` script,
 let's try the following at the command line:
 
 ~~~
-$ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512.nc JJA pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512-JJA-clim_land-mask.png --mask data/sftlf_fx_ACCESS1-3_historical_r0i0p0.nc Land
+$ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512.nc JJA plots/pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512-JJA-clim_land-mask.png --mask data/sftlf_fx_ACCESS1-3_historical_r0i0p0.nc Land
 ~~~
 {: .language-bash}
+* Adjust the above command to match the paths to your data files and where you want your output to go. In the example, the image will go into an existing folder called "plots." 
 
 If we view the resulting image,
 we can see that the ocean has been masked,
