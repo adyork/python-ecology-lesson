@@ -248,3 +248,7 @@ And test your code by running:
 $ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512.nc JJA pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512-JJA-clim_land-mask.png --mask data/sftlf_fx_ACCESS1-3_historical_r0i0p0.nc land
 ~~~
 {: .language-bash}
+
+You should see two files written.  The image and the provenance record:
+* `pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512-JJA-clim_land-mask.png`
+* `pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512-JJA-clim_land-mask.txt`
