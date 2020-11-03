@@ -141,7 +141,7 @@ Using this template as a starting point,
 we can add the functions we developed previously to a script called we called
 `plot_precipitation_climatology.py` in the last lesson.
 
-This is what should be in your `plot_precipitation_climatology.py` after the last lesson.  There are some functions here we can use in our new structure.
+Let's look at some functions we used in `plot_precipitation_climatology.py` in the last lesson.  There are some functions here we can use in our new structure.
 ~~~
 $ cat plot_precipitation_climatology.py
 ~~~
