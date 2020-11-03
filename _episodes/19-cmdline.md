@@ -200,7 +200,7 @@ def plot_pr_climatology(pr_file, season, gridlines=False):
 
 After modifying  `plot_precipitation_climatology.py` to use the same structure as our script template.  We can add a `main()` function, `if __name__ == '__main__':` and `argparse`.  After making these changes  `plot_precipitation_climatology.py` should match the version we had you download in preparation for this lesson. 
 
-You can download a copy pf this script by right clicking this link an choosing "Save link as..." [plot_precipitation_climatology.py](https://github.com/adyork/python-oceanography-lesson/blob/gh-pages/code/plot_precipitation_climatology.py). It looks like this:
+You can download a copy of this script by right clicking this link an choosing "Save link as..." [plot_precipitation_climatology.py](https://github.com/adyork/python-oceanography-lesson/blob/gh-pages/code/plot_precipitation_climatology.py). It looks like this:
 
 ~~~
 $ cat plot_precipitation_climatology.py
