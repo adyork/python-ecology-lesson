@@ -141,7 +141,7 @@ Using this template as a starting point,
 we can add the functions we developed previously to a script called we called
 `plot_precipitation_climatology.py` in the last lesson.
 
-This is what should be in your `plot_precipitation_climatology.py` after the last lesson.
+This is what should be in your `plot_precipitation_climatology.py` after the last lesson.  There are some functions here we can use in our new structure.
 ~~~
 $ cat plot_precipitation_climatology.py
 ~~~
@@ -198,7 +198,9 @@ def plot_pr_climatology(pr_file, season, gridlines=False):
 ~~~
 {: .language-python}
 
-After modifying  `plot_precipitation_climatology.py` to use the same structure as our script template.  We can add a `main()` function, `if __name__ == '__main__':` and `argparse`.  After making these changes  `plot_precipitation_climatology.py` should match the version we had you download in preparation for this lesson.  It looks like this:
+After modifying  `plot_precipitation_climatology.py` to use the same structure as our script template.  We can add a `main()` function, `if __name__ == '__main__':` and `argparse`.  After making these changes  `plot_precipitation_climatology.py` should match the version we had you download in preparation for this lesson. 
+
+You can download a copy pf this script by right clicking this link an choosing "Save link as..." [plot_precipitation_climatology.py](https://github.com/adyork/python-oceanography-lesson/blob/gh-pages/code/plot_precipitation_climatology.py). It looks like this:
 
 ~~~
 $ cat plot_precipitation_climatology.py
@@ -297,7 +299,7 @@ $ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i
 >
 > For this series of challenges,
 > you are required to make improvements to the `plot_precipitation_climatology.py` script 
-> that you downloaded earlier from the setup tab at the top of the page. 
+> that you downloaded earlier.
 >  
 > For the first improvement,
 > edit the line of code that defines the season command line argument
