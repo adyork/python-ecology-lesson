@@ -728,6 +728,9 @@ but everything else is there.
 
 ## Exploring history
 
+Viewing changes between versions is part of git functionality.  However, for large changes it can be easier to understand what is going on
+when looking at them in github.  We will get to that in the next lesson, but here is how you can do it on command line with git.
+
 As we saw earlier, we can refer to commits by their identifiers.
 You can refer to the _most recent commit_ of the working
 directory by using the identifier `HEAD`.
