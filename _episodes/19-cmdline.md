@@ -283,6 +283,8 @@ if __name__ == '__main__':
 ~~~
 {: .language-python}    
 
+Let's review what changed in `plot_precipitation_climatology.py`
+
 ... and then run it at the command line like this:
 
 ~~~
