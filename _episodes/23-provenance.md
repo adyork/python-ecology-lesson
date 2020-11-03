@@ -10,9 +10,22 @@ keypoints:
 - "It is possible (in only a few lines of code) to record the provenance of a data file or image."
 ---
 
-We've now successfully created a command line program - `plot_precipitation_climatology.py` -
+## What is provenance?
+
+Provenance is the history record of an object.  The term has been used long before data scientists latched onto it to refer to the history record of piece of art such as who owned it and where has it been? What restorations were made to it? When was the frame changed? 
+
+We want to know the same details about data.  Where did it come from? What changes have been made to it? 
+
+Provenance capture is a big part of implementing FAIR data practices: Findable, Accessible, Interoperable, and Reusable.  See:
+* Wilkinson, M., Dumontier, M., Aalbersberg, I. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18
+* [The Turing Way: The Fair Principles and Practices](https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-fair.html)
+
+## How do you capture provenance?
+
+There are many ways you can record provenance records but here is a way we can do that in our command line program - `plot_precipitation_climatology.py` -
 that calculates and plots the precipitation climatology for a given season.
-The last step is to capture the provenance of that plot.
+
+The last step is to capture the provenance of plots we create.
 In other words, we need a log of all the data processing steps
 that were taken from the intial download of the data file to the end result
 (i.e. the .png image).
