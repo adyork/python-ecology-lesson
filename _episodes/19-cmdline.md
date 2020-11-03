@@ -12,9 +12,6 @@ keypoints:
 - "Most Python scripts have a similar structure that can be used as a template."
 ---
 
-> For this lesson we recommend using Anaconda Prompt(Win) Terminal(Mac/Linux).  But if you have a preferred way to work with python3 on a command line you can youseit.
->
-{: .callout}
 
 We've arrived at the point where we have successfully defined the functions
 required to plot the precipitation data.
@@ -28,6 +25,10 @@ It's likely that your data processing workflows will include command line utilit
 from the CDO and NCO projects in addition to Python code,
 so the command line is the natural place to manage your workflows
 (e.g. using shell scripts or make files).
+
+> For this lesson we recommend using Anaconda Prompt(Win) Terminal(Mac/Linux).  But if you have a preferred way to work with python3 on a command line you can youseit.
+>
+{: .callout}
 
 In general, the first thing that gets added to any Python script is the following:
 ~~~
