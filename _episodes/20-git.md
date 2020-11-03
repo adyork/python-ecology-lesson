@@ -559,6 +559,132 @@ Date:   Mon Dec 18 14:30:16 2017 +1100
     Initial commit of precip climatology script
 ~~~
 {: .output}
+
+## Exploring history
+
+Viewing changes between versions is part of git functionality.  However, for large changes it can be easier to understand what is going on
+when looking at them in github.  We will get to that in the next lesson, but here is how you can do it on command line with git.
+
+As we saw earlier, we can refer to commits by their identifiers.
+You can refer to the _most recent commit_ of the working
+directory by using the identifier `HEAD`.
+
+To demonstrate how to use `HEAD`,
+let's make a trival change to `plot_precipitation_climatology.py`
+by inserting a comment.
+
+~~~
+# A random comment
+~~~
+{: .language-python}
+
+Now, let's see what we get.
+
+~~~
+$ git diff HEAD plot_precipitation_climatology.py
+~~~
+{: .bash}
+
+~~~
+diff --git a/plot_precipitation_climatology.py b/plot_precipitation_climatology.
+index 29a40fb..344a34e 100644
+--- a/plot_precipitation_climatology.py
++++ b/plot_precipitation_climatology.py
+@@ -9,6 +9,7 @@ import iris.coord_categorisation
+ import cmocean
+ 
++# A random comment
+ 
+ def convert_pr_units(darray):
+     """Convert kg m-2 s-1 to mm day-1.
+
+~~~
+{: .output}
+
+which is the same as what you would get if you leave out `HEAD` (try it).
+The real goodness in all this is when you can refer to previous commits. 
+We do that by adding `~1` to refer to the commit one before `HEAD`.
+
+~~~
+$ git diff HEAD~1 plot_precipitation_climatology.py
+~~~
+{: .bash}
+
+If we want to see the differences between older commits we can use `git diff`
+again, but with the notation `HEAD~2`, `HEAD~3`, and so on, to refer to them.
+
+We could also use `git show` which shows us what changes we made at an older commit
+as well as the commit message,
+rather than the _differences_ between a commit and our working directory.
+
+~~~
+$ git show HEAD~1 plot_precipitation_climatology.py
+~~~
+{: .bash}
+
+~~~
+commit 444c3c045dc69a323e40d4a04813b88e4b89e05e
+Author: Damien Irving <my@email.com>
+Date:   Mon Dec 18 14:59:47 2017 +1100
+
+    Small improvement to help information
+
+diff --git a/plot_precipitation_climatology.py b/plot_precipitation_climatology.py
+index 056b433..a0aa9e4 100644
+--- a/plot_precipitation_climatology.py
++++ b/plot_precipitation_climatology.py
+@@ -99,7 +99,7 @@ def main(inargs):
+ 
+ if __name__ == '__main__':
+ 
+-    description='Plot the precipitation climatology.'
++    description='Plot the precipitation climatology for a given season.'
+     parser = argparse.ArgumentParser(description=description)
+     
+     parser.add_argument("pr_file", type=str,
+~~~
+{: .output}
+
+We can also refer to commits using
+those long strings of digits and letters
+that `git log` displays.
+These are unique IDs for the changes,
+and "unique" really does mean unique:
+every change to any set of files on any computer
+has a unique 40-character identifier.
+Our second commit was given the ID
+`444c3c045dc69a323e40d4a04813b88e4b89e05e`,
+but you only have to use the first seven characters
+for git to know what you mean:
+
+~~~
+$ git diff 444c3c0 plot_precipitation_climatology.py
+~~~
+{: .bash}
+
+~~~
+commit 444c3c045dc69a323e40d4a04813b88e4b89e05e
+Author: Damien Irving <my@email.com>
+Date:   Mon Dec 18 14:59:47 2017 +1100
+
+    Small improvement to help information
+
+diff --git a/plot_precipitation_climatology.py b/plot_precipitation_climatology.py
+index 056b433..a0aa9e4 100644
+--- a/plot_precipitation_climatology.py
++++ b/plot_precipitation_climatology.py
+@@ -99,7 +99,7 @@ def main(inargs):
+ 
+ if __name__ == '__main__':
+ 
+-    description='Plot the precipitation climatology.'
++    description='Plot the precipitation climatology for a given season.'
+     parser = argparse.ArgumentParser(description=description)
+     
+     parser.add_argument("pr_file", type=str,
+~~~
+{: .output}
+
 ## Recovering/Reverting
 
 All right! So
@@ -725,128 +851,3 @@ but everything else is there.
 > {: .language-python}
 {: .solution}
 
-
-## Exploring history
-
-Viewing changes between versions is part of git functionality.  However, for large changes it can be easier to understand what is going on
-when looking at them in github.  We will get to that in the next lesson, but here is how you can do it on command line with git.
-
-As we saw earlier, we can refer to commits by their identifiers.
-You can refer to the _most recent commit_ of the working
-directory by using the identifier `HEAD`.
-
-To demonstrate how to use `HEAD`,
-let's make a trival change to `plot_precipitation_climatology.py`
-by inserting a comment.
-
-~~~
-# A random comment
-~~~
-{: .language-python}
-
-Now, let's see what we get.
-
-~~~
-$ git diff HEAD plot_precipitation_climatology.py
-~~~
-{: .bash}
-
-~~~
-diff --git a/plot_precipitation_climatology.py b/plot_precipitation_climatology.
-index 29a40fb..344a34e 100644
---- a/plot_precipitation_climatology.py
-+++ b/plot_precipitation_climatology.py
-@@ -9,6 +9,7 @@ import iris.coord_categorisation
- import cmocean
- 
-+# A random comment
- 
- def convert_pr_units(darray):
-     """Convert kg m-2 s-1 to mm day-1.
-
-~~~
-{: .output}
-
-which is the same as what you would get if you leave out `HEAD` (try it).
-The real goodness in all this is when you can refer to previous commits. 
-We do that by adding `~1` to refer to the commit one before `HEAD`.
-
-~~~
-$ git diff HEAD~1 plot_precipitation_climatology.py
-~~~
-{: .bash}
-
-If we want to see the differences between older commits we can use `git diff`
-again, but with the notation `HEAD~2`, `HEAD~3`, and so on, to refer to them.
-
-We could also use `git show` which shows us what changes we made at an older commit
-as well as the commit message,
-rather than the _differences_ between a commit and our working directory.
-
-~~~
-$ git show HEAD~1 plot_precipitation_climatology.py
-~~~
-{: .bash}
-
-~~~
-commit 444c3c045dc69a323e40d4a04813b88e4b89e05e
-Author: Damien Irving <my@email.com>
-Date:   Mon Dec 18 14:59:47 2017 +1100
-
-    Small improvement to help information
-
-diff --git a/plot_precipitation_climatology.py b/plot_precipitation_climatology.py
-index 056b433..a0aa9e4 100644
---- a/plot_precipitation_climatology.py
-+++ b/plot_precipitation_climatology.py
-@@ -99,7 +99,7 @@ def main(inargs):
- 
- if __name__ == '__main__':
- 
--    description='Plot the precipitation climatology.'
-+    description='Plot the precipitation climatology for a given season.'
-     parser = argparse.ArgumentParser(description=description)
-     
-     parser.add_argument("pr_file", type=str,
-~~~
-{: .output}
-
-We can also refer to commits using
-those long strings of digits and letters
-that `git log` displays.
-These are unique IDs for the changes,
-and "unique" really does mean unique:
-every change to any set of files on any computer
-has a unique 40-character identifier.
-Our second commit was given the ID
-`444c3c045dc69a323e40d4a04813b88e4b89e05e`,
-but you only have to use the first seven characters
-for git to know what you mean:
-
-~~~
-$ git diff 444c3c0 plot_precipitation_climatology.py
-~~~
-{: .bash}
-
-~~~
-commit 444c3c045dc69a323e40d4a04813b88e4b89e05e
-Author: Damien Irving <my@email.com>
-Date:   Mon Dec 18 14:59:47 2017 +1100
-
-    Small improvement to help information
-
-diff --git a/plot_precipitation_climatology.py b/plot_precipitation_climatology.py
-index 056b433..a0aa9e4 100644
---- a/plot_precipitation_climatology.py
-+++ b/plot_precipitation_climatology.py
-@@ -99,7 +99,7 @@ def main(inargs):
- 
- if __name__ == '__main__':
- 
--    description='Plot the precipitation climatology.'
-+    description='Plot the precipitation climatology for a given season.'
-     parser = argparse.ArgumentParser(description=description)
-     
-     parser.add_argument("pr_file", type=str,
-~~~
-{: .output}
