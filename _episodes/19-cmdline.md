@@ -290,10 +290,11 @@ Let's review what changed in `plot_precipitation_climatology.py`
 ... and then run it at the command line like this:
 
 ~~~
-$ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512.nc MAM pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512-MAM-clim.png
+$ python plot_precipitation_climatology.py data/pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512.nc MAM plots/pr_Amon_ACCESS1-3_historical_r1i1p1_200101-200512-MAM-clim.png
 ~~~
 {: .language-bash}
 
+Makes sure to adjust the above file paths to match the structure on your computer.  In the above command, the input file is in a data folder and I made a folder called plots to store my output images.
 
 > ## Choices
 >
