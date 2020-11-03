@@ -107,14 +107,22 @@ origin   https://github.com/DamienIrving/data-carpentry.git (fetch)
 ~~~
 {: .output}
 
+Let's do a command to make sure we are working in the right space called a branch.   [Branches](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-branches) are a more advanced topic we won't be covering today.  Today we will stay in our main branch.
+* You may see older screenshots and documentation refer to "master" instead of "main" for your primary branch.  Follow the below command to make sure you are using the new convention.
+
+~~~
+$ git branch -M main
+~~~
+{: .language-bash}
+
 The name `origin` is a local nickname for your remote repository. We could use
 something else if we wanted to, but `origin` is by far the most common choice.
 
 Once the nickname `origin` is set up, this command will push the changes from
-our local repository to the repository on GitHub:
+our local repository to the repository on GitHub.
 
 ~~~
-$ git push origin master
+$ git push origin main
 ~~~
 {: .language-bash}
 
@@ -125,21 +133,21 @@ Compressing objects: 100% (6/6), done.
 Writing objects: 100% (9/9), 821 bytes, done.
 Total 9 (delta 2), reused 0 (delta 0)
 To https://github.com/DamienIrving/data-carpentry
- * [new branch]      master -> master
-Branch master set up to track remote branch master from origin.
+ * [new branch]      master -> main
+Branch main set up to track remote branch master from origin.
 ~~~
 {: .output}
 
 We can pull changes from the remote repository to the local one as well:
 
 ~~~
-$ git pull origin master
+$ git pull origin main
 ~~~
 {: .language-bash}
 
 ~~~
 From https://github.com/DamienIrving/data-carpentry
- * branch            master     -> FETCH_HEAD
+ * branch            main     -> FETCH_HEAD
 Already up-to-date.
 ~~~
 {: .output}
