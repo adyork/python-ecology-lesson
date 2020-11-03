@@ -20,7 +20,7 @@ keypoints:
  
 Adding tests to your code does take extra time but it makes your code and data more reliable.  Here we are going to discuss a type of test called assertions but there are many more.  You can review the resources below for more information about types of tests, why you would want to do them, and how to implement them. 
  
- ### Resources:
+## Resources:
  * [The Turing Way: Code Testing](https://the-turing-way.netlify.app/reproducible-research/testing.html?highlight=unit%20test).  Great information about why and how to test.  This includes guidance for other languages too, not just python.
  * [The Hitchhiker’s Guide to Python: Testing Your Code](https://docs.python-guide.org/writing/tests/) Targeted guidance for ways to test in python.  
  
