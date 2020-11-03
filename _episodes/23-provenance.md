@@ -240,7 +240,7 @@ print(new_record)
 > {: .language-python}
 {: .solution}
 
-You can download a copy of the final code by right clicking this link and choosing "Save link as..." [plot_precipitation_climatology_final.py](https://github.com/adyork/python-oceanography-lesson/raw/gh-pages/code/plot_precipitation_climatology_final.py). Remove "_final.py" if you are using it with the following command.
+You can download a copy of the final code by right clicking this link and choosing "Save link as..." [plot_precipitation_climatology_final.py](https://github.com/adyork/python-oceanography-lesson/raw/gh-pages/code/plot_precipitation_climatology_final.py). Remove "_final" from the name if you are using it with the following command.
 
 And test your code by running:
 
