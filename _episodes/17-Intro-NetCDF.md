@@ -6,10 +6,10 @@ questions:
     - "What is NetCDF format?"
     - "Why using Xarray for NetCDF files in Python "
 objectives:
-    - "Undertanding how NetCDF is stored." 
+    - "Understand how NetCDF is stored." 
     - "Describe the components of a NetCDF file."
 keypoints:
-    - "NetCDF is a format to store gridded data and widely use in climate science."
+    - "NetCDF is a format to store gridded data that is widely used in climate science."
     - "A netCDF file contains dimensions, variables, and attributes."
     - "Xarray is a library to work with NetCDF data in Python."
     - "CMIP data is used in climate modelling."
@@ -17,7 +17,7 @@ keypoints:
 ---
 
 ## What is NetCDF?
-These lessons work with raster or “gridded” data that are stored as a uniform grid of values using the netCDF file format. This is the most common data format and file type in the atmosphere and ocean sciences; essentially all output from weather, climate and ocean models is gridded data stored as a series of netCDF files. Satellite data is also often provided in NetCDF format.    
+These lessons work with raster or “gridded” data that are stored as a uniform grid of values using the netCDF file format. This is the most common data format and file type in the atmospheric and ocean sciences; essentially all output from weather, climate and ocean models is gridded data stored as a series of netCDF files. Satellite data is also often provided in NetCDF format.    
   
 Network Common Data Form (NetCDF) files are in binary format that are platform independent and self-describing (files contain a header and file metadata in the form of name/value attributes). This file format was developed by the Unidata project at the University Corporation for Atmospheric Research (UCAR).  
   
@@ -31,14 +31,14 @@ The data in a netCDF file is **stored in the form of arrays**. The data stored i
   
 Temperature varying over time at a location is stored as a **one-dimensional array**. You can think of it as a list containing elements of the same data type (i.e. integers, floats).    
   
-An example of a **2-dimensional array** is temperature over an area for a given time. A Pandas DataFrame is also a 2-dimensional data structure, but it differs from an array: a DataFrame can store hetergenous data elements, and you can access it as a spreadsheet (using the columnnames and rows).  
+An example of a **2-dimensional array** is temperature over an area for a given time. A Pandas DataFrame is also a 2-dimensional data structure, but it differs from an array: a DataFrame can store hetergenous data elements, and you can access it as a table (using the columnnames and rows).  
   
 ![1D_2D](../fig/netcdf_1D_2D_array.PNG)  
   
 **Three-dimensional (3D) data**, like temperature over an area varying with time. Think of this as a Pandas DataFrame where the "columns" (variables) have more than one dimension.  
 ![3D](../fig/netcdf_3D.gif)  
   
-**Four-dimensional (4D) data**, like temperature over an area varying with time and altitude, is stored as a series of two-dimensional arrays.  
+**Four-dimensional (4D) data**, like temperature over a volume (lat, lon, altitude) varying with time, is stored as a series of three-dimensional arrays.  
 ![3D](../fig/netcdf_4D.gif)  
   
 ## Basic components of a NetCDF file
@@ -51,7 +51,7 @@ A netCDF file contains **dimensions, variables, and attributes**. These componen
 A NetCDF dimension is a named integer used to **specify the shape** of one or more of the multi-dimensional variables contained in a netCDF file. A dimension may be used to represent a real physical dimension, for example, time, latitude, longitude, or height; or more abstract quantities like station or model-run ID.  
   
 Every NetCDF dimension has **both a name and a size**.  
-* A dimension name is an arbitrary sequence of alphanumeric characters (as well as the underscore character, `_',` and the hyphen character, `-' `) beginning with a letter. Case is distinguished in netCDF names. 
+* A dimension name is an arbitrary sequence of alphanumeric characters (as well as the underscore character, `_`, and the hyphen character, `-`) beginning with a letter. Case is distinguished in netCDF names. 
 * A dimension size is an arbitrary positive integer, except that one dimension in a netCDF file can have the size UNLIMITED. Such a dimension is called the unlimited dimension or the record dimension. A variable with an unlimited dimension can grow to any length along that dimension.     
 
 
@@ -79,7 +79,7 @@ Setting up a Notebook and loading NetCDF data using Python libraries is not the 
 ### Command Line Interfaces
 * Ncdump: Ncdump is the netCDF file reader that is bundled with Unidata's netCDF product. To obtain it, visit the UCAR Unidata Web site.
 * NetCDF Operators (NCO): The NCO are a suite of programs known as operators in which each operator is a standalone, command line program which is executed at the UNIX command prompt. To learn more and to download the operators, visit the NCO Hompage.  
-* Climate data operatores (CDO - https://code.mpimet.mpg.de/projects/cdo), also a collection of command-line operators to manipulate and analyze NetCDf data. It is not as popular as NCO, but still used. 
+* Climate data operators (CDO - https://code.mpimet.mpg.de/projects/cdo), also a collection of command-line operators to manipulate and analyze NetCDf data. It is not as popular as NCO, but still used. 
 
 ### GUI Interfaces
 * Ncview: Ncview is a netCDF visual browser that allows the user to visually inspect NetCDF data files. To download ncview, visit David Pierce's Ncview Web page.
@@ -90,9 +90,9 @@ Setting up a Notebook and loading NetCDF data using Python libraries is not the 
 
 ## CMIP data
 
-This is the dataset that we will be using for our class and is very known and widely used by oceanographers. The dataset  is regular, linear, gridded data. It represent the mean monthly prescipitation flux (kg m-2 s-1) on a global scale. 
+This is the dataset that we will be using for our class and is very known and widely used by oceanographers. The dataset is regular, linear, gridded data. It represents the mean monthly prescipitation flux (kg m-2 s-1) on a global scale. 
 
-CMIP (Coupled Model Intercomparison Projec) provides a community-based infrastructure in support of climate model diagnosis, validation, intercomparison, documentation and data access. This framework enables a diverse community of scientists to analyze GCMs in a systematic fashion, a process which serves to facilitate model improvement.
+CMIP (Coupled Model Intercomparison Project) provides a community-based infrastructure in support of climate model diagnosis, validation, intercomparison, documentation and data access. This framework enables a diverse community of scientists to analyze GCMs in a systematic fashion, a process which serves to facilitate model improvement.
 
 The acronym GCM originally stood for General Circulation Model. Recently, a second meaning came into use, namely Global Climate Model. While these do not refer to the same thing, General Circulation Models are typically the tools used for modelling climate, and hence the two terms are sometimes used interchangeably. However, the term "global climate model" is ambiguous and may refer to an integrated framework that incorporates multiple components including a general circulation model, or may refer to the general class of climate models that use a variety of means to represent the climate mathematically. 
 
